@@ -1,0 +1,97 @@
+body{
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+header h1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+
+nav{
+    height: 50px;
+    /*Alturadebarradenavegación*/width: auto;
+    /*Elanchodelabarradenavegaciónseajustaenautomáticoalcontenidodentrodeella*/background-color: rgb(98, 184, 219);
+    display: flex;
+    /*Flexbox,flexibleyalineada*/margin-bottom: 10px;
+    border-radius: 18px;
+     /* Redondea las esquinas de la barra */   
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+   
+   nav ul{/*  Lista desordenada dentro de un elemento nav*/
+    padding: 0; /* Borra el padding (relleno interno). Los li estarán alineados con el borde izquierdo de la barra de nav*/
+    list-style-type: none; /* Elimina los bullet points que da ul por default*/
+    display: flex; /* Flexbox, permite distribución horizontal de elementos */
+    flex: 2; /* El contenedor de la ul ocupará dos partes del espacio disponible de la barra de navegación */
+   }
+   
+   nav li {
+    display: inline; /* Elementos en línea horizontal */
+    text-align: center; 
+    flex: 1; /* Cada li ocupará una parte del espacio disponible
+    */
+   }
+   
+   nav a{
+    display: inline-block;/*  Enlaces se comportarán como elementos en línea, pero se podría definir ancho y alto, si es necesario. */
+    font-size: 15px; 
+    text-decoration: none; /* Elimina el subrayado propio de los enlaces */
+    color: black;
+   }
+   
+   a[href="./HTML,CSS/assets/pages/nosotros.html"]{ /* Selector de atributo */
+    color: brown;
+   }
+
+
+
+
+   form{
+    margin: 0 auto;
+    width: 700px;
+    padding: 15px;
+    border: ridge black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+fieldset{
+    border-color: #43C6AC;
+}
+
+
+form input{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.basicos{
+    border-color: beige;
+}
+
+legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+   
+}
+
+input{
+    margin: 10px 0;
+}

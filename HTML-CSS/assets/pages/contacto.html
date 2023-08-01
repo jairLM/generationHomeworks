@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hola, contáctanos!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../../index.html">Inicio</a></li>
+            <li><a href="./Selectores.html">Selectores</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <form action="https://formsubmit.co/luizz.jair@gmail.com" method="post"> <!-- action y method son los atributos principales para los formularios -->
+            <fieldset class="basicos"> <!-- Agrupar datos -->
+                <legend>Datos de contacto</legend>
+
+                <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" placeholder="Nombre"></label> <br>
+
+                 <label for="apellidos">Apellidos: <input id="apellidos" name="apellidos" type="text" placeholder="Apellidos"></label><br>
+
+                 <label for="correo">Correo electrónico: <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required></label><br>
+
+                 <label for="telefono">Numero de teléfono: <input id="telefono" name="telefono" type="tel" placeholder="5252525252"></label>
+                
+                 
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del pedido</legend>
+                ¿Cuántos tamales necesitas? <input type="number" min="20" max="500" required><br><br>
+                ¿Cuántos litros de atole necesitas? <input type="number" min="4" max="20"placeholder="litros" ><br><br>
+                Fecha del evento <input type="date" >
+            </fieldset>
+
+            <fieldset class="basicos">
+                <legend>Datos del envio</legend>
+
+                <label for="sucursal">Recoger en sucursal:<input type="radio" id="sucursal" name="tipo-de-envio"></label><br>
+
+                <label for="envio">Envío a domicilio: <input type="radio"id="envio"name="tipo-de-envio"></label><br>
+
+                 
+               
+
+                <select name="" id="">
+                    <option value="Sucursal Oaxaca">Sucursal Oaxaca</option>
+                    <option value="Sucursal Mérida">Sucursal Mérida</option>
+                    <option value="Sucursal Ecatepec">Sucursal Ecatepec</option>
+                    <option value="Sucursal La casa de Mau">Sucursal La casa de Mau</option>
+                    <option value="Sucursal Guadalajara">Sucursal Guadalajara</option>
+                </select>
+
+                <input list="Sucursales">
+                <datalist id="Sucursales">
+                    <option value="Sucursal Oaxaca">Sucursal Oaxaca</option>
+                    <option value="Sucursal Mérida">Sucursal Mérida</option>
+                    <option value="Sucursal Ecatepec">Sucursal Ecatepec</option>
+                    <option value="Sucursal La casa de Mau">Sucursal La casa de Mau</option>
+                    <option value="Sucursal Guadalajara">Sucursal Guadalajara</option>
+                </datalist><br><br>
+
+                <label for="terminos-condiciones"><input type="checkbox" id="terminos-condiciones" name="terminos">Acepto terminos y condiciones</label><br>
+
+                
+                <button type="submit">Enviar</button>
+
+                
+                
+            </fieldset>
+        </form>
+        </section>
+    </main>
+    
+</body>
+</html>
