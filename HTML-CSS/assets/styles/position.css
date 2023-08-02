@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    display: inline-block;
+    
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border: solid red 2px;
+}
+
+/* #lonely-box{
+    position: relative;
+    right:100px;
+    top: 100px;
+} */
+
+#two{
+    position: relative;
+    top: 35px;
+    left: 100px;
+    background-color: crimson;
+}
+
+#three{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    background-color: blueviolet;
+}
+
+.father{
+    margin: auto;
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 20px;
+}
